@@ -1,0 +1,43 @@
+CREATE TABLE Master(
+Employee ID
+Employee name
+Employee salary
+Employee Department
+Employee location
+
+INSERT INTO Employee Value
+CREATE TABLE  Empyoyee_mumbai as select*from employee where location=mumbai;
+CREATE TABLE  Empyoyee_Pune as select*from employee where location=Pune;
+CREATE TABLE  Empyoyee_Nashik as select*from employee where location=Nashik;
+
+SELECTR*FROM table name 
+
+REPLICATION (to create copy)
+CREATE TABLE employee_replica as SELECT * FROM employee;
+SELECT * FROM employee replica
+
+Distributed query
+SELECT*FROM employee_mumbai union all;
+SELECT*FROM employee_Pune union all;
+SELECT*FROM employee_Nashik union all;
+
+SELECT*FROM employee where Department=IT (to see datebase)
+
+SELECT*FROM employee_mumbai where Department=IT'
+SELECT*FROM employee_Pune where Department=IT
+SELECT*FROM employee_Nashik where Department=IT
+
+Total no of employee on each side (query)
+select location,count(*)Total_employee from employee group by location
+
+SELECT Department,AVG (Salary) AVG_salary
+From employee group by department
+
+CREATE TABLE employee_backup as select*FROM
+
+Create index index_Dept on employee (department)
+
+
+create table  employee_personal  as select employee_id,empplyee_name,emplyee_location from eemplyee 
+
+craete table emplyee salary as select employee id from emplyee
