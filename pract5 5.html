@@ -1,0 +1,38 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Email Validation</title>
+        <script>
+
+<script>
+    function validateEmail()
+{
+    var email= document.getElementById("email").value;
+    if(email=="")
+{
+    alert("Please enter Email Address");
+    return false;
+
+}
+
+if (email.indexOf("@")==-1)
+{
+    alert("Please enter a valid Email Address");
+    return false;
+}
+
+alert("Email is valid");
+return true;
+}
+</script>
+ </head>
+<body>
+<h2>Email Validation Form</h2>
+<form onsubmit="returnvalidateEmail()">
+    <label>Email:</label><br>
+    <input type="text" id="email"><br><br>
+    <input type="submit" value="Submit">
+    </form>
+    </body>
+
+</html>

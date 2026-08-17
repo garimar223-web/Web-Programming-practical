@@ -1,0 +1,35 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>Mathematical Operations</title>
+    </head>
+<body>
+    <h1>Javascript</h1>
+<label>Enter first Number:</label>
+<input type="number" id="num1"><br><br>
+
+<label>Enter second number:</label>
+<input type="number" id="num2"><br><br>
+
+<button onclick="calculate()">Calculate</button>
+
+<h2 id="add"></h2>
+<h2 id="sub"></h2>
+<h2 id="mul"></h2>
+<h2 id="div"></h2>
+
+<script>
+    function calculate()
+{
+    var a= Number (document.getElementById("num1").value);
+    var b= Number (document.getElementById("num2").value);
+
+document.getElementById("add").innerHTML= "Addition=" +(a+b);
+document.getElementById("sub").innerHTML= "Subtraction=" +(a-b);
+document.getElementById("mul").innerHTML= "Multiplication=" +(a*b);
+document.getElementById("div").innerHTML= "Division=" +(a/b);
+
+}
+</script>
+</body>
+</html>
