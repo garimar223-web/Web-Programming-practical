@@ -1,0 +1,96 @@
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Technology Suggestion Form</title>
+
+    <script>
+
+        function validateForm()
+        {
+            var technology =
+                document.getElementById("technology").value;
+
+            var category =
+                document.getElementById("category").value;
+
+            var reason =
+                document.getElementById("reason").value;
+
+            if (technology == "")
+            {
+                alert("Please enter technology name.");
+                return false;
+            }
+
+            if (category == "")
+            {
+                alert("Please enter technology category.");
+                return false;
+            }
+
+            if (reason == "")
+            {
+                alert("Please enter reason for suggestion.");
+                return false;
+            }
+
+            return true;
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+<h2>Technology Suggestion Form</h2>
+
+<form action="save.php" method="post"
+      onsubmit="return validateForm()">
+
+    <label>Technology Name:</label>
+    <br>
+
+    <input type="text"
+           id="technology"
+           name="technology">
+
+    <br><br>
+
+
+    <label>Technology Category:</label>
+    <br>
+
+    <input type="text"
+           id="category"
+           name="category">
+
+    <br><br>
+
+
+    <label>Reason for Suggestion:</label>
+    <br>
+
+    <textarea
+        id="reason"
+        name="reason"
+        rows="5"
+        cols="40">
+    </textarea>
+
+    <br><br>
+
+
+    <input type="submit"
+           value="Submit Suggestion">
+
+</form>
+
+</body>
+
+</html>
